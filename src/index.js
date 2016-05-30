@@ -1,8 +1,8 @@
-/* @flow */
+// @flow
 import { createElement } from "react"
 import { render } from "react-dom"
-import App from "./App"
+import { AppContainer } from "./AppContainer"
 
 const root = document.createElement("div")
-render(<App />, root)
+render(<AppContainer />, root)
 document.body.appendChild(root)

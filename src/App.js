@@ -1,21 +1,22 @@
-/* @flow */
+// @flow
 import { Component, createElement } from "react"
 
 export default class App extends Component {
 
   props: {
-    onSwag?: () => any
+    appText: string,
+    onSwag: () => any,
   };
 
   render() {
-    const { onSwag } = this.props
+    const { appText, onSwag } = this.props
 
     return (
       <a
         href="#"
         onClick={ onSwag }
       >
-        It works yo
+        { appText }
       </a>
     )
   }
